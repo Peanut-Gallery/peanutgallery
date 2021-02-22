@@ -25,5 +25,6 @@
     - Research security risks and advise other team members on how to manage these issues
 
 **Shawn Anthony**
+  - Researched, selected, and briefed the team on the static analysis tool of choice
   - To do next:
     - Kickstarting and managing the back-end code.
