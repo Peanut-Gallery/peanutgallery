@@ -26,4 +26,4 @@
 
 **Shawn Anthony**
   - To do next:
-    - 
+    - Kickstarting and managing the back-end code.
