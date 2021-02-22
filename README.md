@@ -18,7 +18,7 @@
     - Configure some of the Javascript components to match the intended functionality
     - Research and work on the security aspects of our web application
 
-**John Hsu**
+**Jon Hsu**
   - Edited some of the UI components to match the intended appearance
   - To do next:
     - Continue working on design appearance and test user-friendliness
