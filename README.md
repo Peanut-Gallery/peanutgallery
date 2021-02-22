@@ -19,6 +19,7 @@
     - Research and work on the security aspects of our web application
 
 **Jon Hsu**
+  - Started a mockup of the main page
   - Edited some of the UI components to match the intended appearance
   - To do next:
     - Continue working on design appearance and test user-friendliness
