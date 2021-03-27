@@ -14,6 +14,7 @@ const surveySchema = new SimpleSchema({
   question2: String,
 });
 
+/** reference schema
 const formSchema = new SimpleSchema({
   title: String,
   ISBN: { type: Number, label: 'ISBN' },
@@ -28,15 +29,16 @@ const formSchema = new SimpleSchema({
     defaultValue: 'good',
   },
 });
+*/
 
 /** Renders the Page for adding a textbook. */
-class SellATextbook extends React.Component {
+class SubmitSurvey extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { title, ISBN, image, author, cost, yearPublished, description, condition } = data;
+    const { name, question1, question2 } = data;
     const owner = Meteor.user().username;
-    Book.insert({ title, ISBN, image, author, cost, yearPublished, description, condition, owner },
+    Book.insert({ name, question1, question2, owner },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -57,7 +59,7 @@ class SellATextbook extends React.Component {
             <Header as="h2" inverted textAlign="center">Sell A Textbook</Header>
             <AutoForm ref={ref => {
               fRef = ref;
-            }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
+            }} schema={surveySchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
                 <TextField name='title'/>
                 <NumField name='ISBN' decimal={false}/>
@@ -77,4 +79,4 @@ class SellATextbook extends React.Component {
   }
 }
 
-export default SellATextbook;
+export default SubmitSurvey;
