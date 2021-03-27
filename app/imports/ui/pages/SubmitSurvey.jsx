@@ -5,45 +5,31 @@ import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema from 'simpl-schema';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
-import { Book } from '../../api/book/Book';
+import { Survey } from '../../api/Survey/Survey';
 
 /** Schema for survey submission */
 const surveySchema = new SimpleSchema({
   name: String,
   question1: String,
   question2: String,
+  question3: String,
+  question4: String,
 });
 
-/** reference schema
-const formSchema = new SimpleSchema({
-  title: String,
-  ISBN: { type: Number, label: 'ISBN' },
-  image: String,
-  author: String,
-  cost: { type: Number, min: 0 },
-  description: String,
-  yearPublished: { type: Number, label: 'Year Published', min: 0 },
-  condition: {
-    type: String,
-    allowedValues: ['excellent', 'good', 'fair', 'poor'],
-    defaultValue: 'good',
-  },
-});
-*/
 
 /** Renders the Page for adding a textbook. */
 class SubmitSurvey extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { name, question1, question2 } = data;
+    const { name, question1, question2, question3, question4 } = data;
     const owner = Meteor.user().username;
-    Book.insert({ name, question1, question2, owner },
+    Survey.insert({ name, question1, question2, question3, question4, owner },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
           } else {
-            swal('Success', 'Item added successfully', 'success');
+            swal('Success', 'Survey recorded successfully', 'success');
             formRef.reset();
           }
         });

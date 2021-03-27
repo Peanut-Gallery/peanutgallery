@@ -7,9 +7,11 @@ const Survey = new Mongo.Collection('Survey');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const SurveySchema = new SimpleSchema({
-    name: String,
+    name: String, /** Some kind of unique identifier */
     question1: String,
     question2: String,
+    question3: String,
+    question4: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
