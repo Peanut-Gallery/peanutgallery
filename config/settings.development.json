@@ -61,19 +61,11 @@
 ],
 "defaultProfile": [
 {
-"name": "Sophia Cruz",
-"email": "secruz@hawaii.edu",
-"id": "10101010",
-"image": "https://react.semantic-ui.com/images/wireframe/image.png",
-"description": "Welcome to the TextRealm community! Don't forget to read the About/FAQ!",
-"owner": "secruz@hawaii.edu"
-},
-{
 "name": "Sang Nguyen",
 "email": "snguyen2@hawaii.edu",
 "id": "11111111",
 "image": "https://react.semantic-ui.com/images/wireframe/image.png",
-"description": "Welcome to the TextRealm community! Don't forget to read the About/FAQ!",
+"description": "Welcome to the Peanut Gallery community! Don't forget to read the About/FAQ!",
 "owner": "snguyen2@hawaii.edu"
 },
 {
