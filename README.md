@@ -1,15 +1,17 @@
 # Peanut Gallery
 
-# Completed
-- Imported a template into our repository.
+# 2/21/21 Update
 
-# Pending
+## Completed
+- Imported a template into our repository
+
+## Pending
 - Configure the front-end code to create the intended UI and appearance of our web application
   - Work around with SemanticUI and React to create a user-friendly appearance across our pages
 - Configure the back-end code to ensure various Javascript components match their intended functionality
-- Research and implement various security measures to ensure reliable and secure service and data access.
+- Research and implement various security measures to ensure reliable and secure service and data access
 
-# Team Members
+## Team Members
 
 **Sang Nguyen**
   - Imported the template into the repository
@@ -28,4 +30,39 @@
 **Shawn Anthony**
   - Researched, selected, and briefed the team on the static analysis tool of choice
   - To do next:
-    - Kickstarting and managing the back-end code.
+    - Kickstarting and managing the back-end code
+
+# 3/28/21 Update
+
+## Completed
+- Established a Mongo database to hold survey responses
+- Updated various elements of the application to match the relevant subject
+  - Landing Page updated with new logo & body message
+  - Footer element changed to include relevant text
+  - Header elements include relevant links
+
+## Pending
+- Continue working on the front-end code to create the intended UI and appearance of our web application
+- Continue configuring the back-end code to ensure various Javascript components match their intended functionality
+- Research and implement various security measures to ensure reliable and secure service and data access
+- Find penetration-testing tools to find security flaws in our application
+- Configure database application and data schema to fit the data that we are passing through
+
+## Team Members
+
+**Sang Nguyen**
+  - Updated the pages and components for the application to match the intended features/functionality
+  - To do next:
+    - Continue working on the code for the application
+
+**Jon Hsu**
+  - Provided additional mockups and resources to be used in application
+  - Researched dynamic analysis tools to be used for application
+  - To do next:
+    - Continue working on design appearance and test user-friendliness
+    - Find security tools for penetration-testing for our next deadline.
+
+**Shawn Anthony**
+  - Researched, selected, and briefed the team on the static analysis tool of choice
+  - To do next:
+    - Finish making changes to schema to fit survey responses.
