@@ -99,6 +99,5 @@
     - Testing security measures of our application and database
 
 **Shawn Anthony**
-  - Setting up the data from the application to the database
   - To do next:
     - Continue working on our database
