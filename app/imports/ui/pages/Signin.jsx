@@ -45,7 +45,7 @@ export default class Signin extends React.Component {
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
-              <Segment inverted className="manoa-green" padded>
+              <Segment inverted padded>
                 <Header as="h2" textAlign="center">
                   Login to your account
                 </Header>
@@ -74,8 +74,11 @@ export default class Signin extends React.Component {
                 </Segment>
               </Form>
               <div className="margin-message">
-                <Message className="manoa-green">
-                  <Link to="/signup">Click here to Register</Link>
+                <Message>
+                  New User? <Link to="/signup">Click here to Register</Link>
+                </Message>
+                <Message>
+                  <Link to="/about">Terms of Service</Link>
                 </Message>
               </div>
               {this.state.error === '' ? (

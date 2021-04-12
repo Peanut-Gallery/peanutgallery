@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Card } from 'semantic-ui-react';
+import { Image, Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 
@@ -20,20 +20,14 @@ class TextbookEntryPublic extends React.Component {
             </Card.Meta>
             <br/>
             <Card.Meta>
-              Cost: {this.props.book.cost}
+              Company: {this.props.book.cost}
             </Card.Meta>
             <br/>
-            <Card.Meta>
-              Condition: {this.props.book.condition}
-            </Card.Meta>
-            <br/>
-            <Card.Meta>
-              Year Published: {this.props.book.yearPublished}
-            </Card.Meta>
-            <br/>
-            <Card.Content extra>
-              <Link to={`/bookProfile/${this.props.book._id}`}>View More</Link>
-            </Card.Content>
+          </Card.Content>
+          <Card.Content extra>
+            <Button basic color='green'>
+              <Link to={`/addComment/${this.props.book._id}`}>Take Survey</Link>
+            </Button>
           </Card.Content>
         </Card>
     );

@@ -109,6 +109,9 @@ class Signup extends React.Component {
                 <Message>
                   Already have an account? Login <Link to="/signin">here</Link>
                 </Message>
+                <Message>
+                  <Link to="/about">Terms of Service</Link>
+                </Message>
               </div>
               {this.state.error === '' ? (
                   ''

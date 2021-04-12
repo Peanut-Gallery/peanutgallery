@@ -24,7 +24,7 @@ export class SearchComp extends React.Component {
     return (
         <Container className='search-bar'>
           <input style={{ height: '35px', width: '900px', borderless: 'true' }} type="search"
-                 placeholder="Search by Title, ISBN, or Author"
+                 placeholder="Search by Name or Company"
               /* eslint-disable-next-line no-return-assign */
                  ref={userIn => this.result = userIn}/>
           <Button type='submit' onClick={() => this.hasValue()}>Go!</Button>

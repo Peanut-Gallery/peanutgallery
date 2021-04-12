@@ -10,10 +10,9 @@ class Reviews extends React.Component {
     return (
         <Card>
           <Card.Content>
-            <Image src={this.props.reviews.userImage} floated='right' size='mini'/>
-            <Card.Header>User {this.props.reviews.userEmail}</Card.Header>
+            <Card.Header>User: {this.props.reviews.userEmail}</Card.Header>
             <Card.Header>
-              just bought from: {this.props.reviews.toUser}!
+              Completed a new survey for: !
             </Card.Header>
             <Card.Meta>
               <div>{this.props.reviews.postedAt.toLocaleDateString('en-US')}</div>
