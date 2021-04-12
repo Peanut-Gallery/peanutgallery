@@ -66,3 +66,39 @@
   - Researched, selected, and briefed the team on the static analysis tool of choice
   - To do next:
     - Finish making changes to schema to fit survey responses.
+
+# 4/11/21 Update
+
+## Completed
+- Updated various elements of the application to match the relevant subject
+  - Sign In and Sign Up pages now include links to the About Page
+  - Updated the header to include only relevent links
+  - Updated the Survey page to allow users to take surveys
+  - Updated various back-end compatibility among different files
+  - Updated the data schema for the data cards on the Survey
+  - Updated the user reviews to match the intended appearance
+
+## Pending
+- Continue working on the front-end code to create the intended UI and appearance of our web application
+- Continue configuring the back-end code to ensure various Javascript components match their intended functionality
+- Research and implement various security measures to ensure reliable and secure service and data access
+- Find penetration-testing tools to find security flaws in our application
+- Configure database application and data schema to fit the data that we are passing through
+
+## Team Members
+
+**Sang Nguyen**
+  - Updated the pages and components for the application to match the intended features/functionality
+  - To do next:
+    - Continue working on the code for the application
+
+**Jon Hsu**
+  - Researched dynamic analysis tools to be used for application
+  - To do next:
+    - Continue working on design appearance and test user-friendliness
+    - Testing security measures of our application and database
+
+**Shawn Anthony**
+  - Setting up the data from the application to the database
+  - To do next:
+    - Continue working on our database
