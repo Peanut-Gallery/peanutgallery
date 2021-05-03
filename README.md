@@ -137,7 +137,7 @@ If it all goes well, the application will appear at [http://localhost:3000](http
 
 ### Initialization
 
-The config directory is intended to hold settings files. The repository contains one file: config/settings.development.json.
+The settings.development.json file is intended to hold default database settings.
 
 This file contains default definitions for Users, Survey Entries, and Ratings/Reviews and the relationships between them.
 
@@ -152,6 +152,6 @@ This program was very challenging to create, since there were a lot of new conce
 ## Links
 
 - [Online Repository](https://github.com/Peanut-Gallery/peanutgallery)
-- [Documentation](https://github.com/Peanut-Gallery/peanutgallery/edit/main/README.md)
+- [Documentation](https://github.com/Peanut-Gallery/peanutgallery/blob/main/doc/Assignment%205_%20SDLC%20-%20Release%20-%20Final%20Security%20Review%2C%20Incident%20Response%20Plan%2C%20Archive%20Report%2C%20User%20Guide.pdf)
 - [Release Version](https://github.com/Peanut-Gallery/peanutgallery/releases/tag/v1.0)
 - [Wiki Page](https://github.com/Peanut-Gallery/peanutgallery/wiki/Wiki-Page-for-Peanut-Gallery)
