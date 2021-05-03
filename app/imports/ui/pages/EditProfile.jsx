@@ -12,7 +12,6 @@ import { UserInfo } from '../../api/userinfo/Userinfo';
 const formSchema = new SimpleSchema({
   name: String,
   email: String,
-  id: Number,
   image: String,
   description: String,
 });
@@ -23,7 +22,7 @@ class EditProfile extends React.Component {
   /** On successful submit, insert the data. */
   submit(data) {
     const { name, email, id, image, description, _id } = data;
-    UserInfo.update(_id, { $set: { name, email, id, image, description } }, (error) => (error ?
+    UserInfo.update(_id, { $set: { name, email, image, description } }, (error) => (error ?
         swal('Error', error.message, 'error') :
         swal('Success', 'Profile updated successfully', 'success')));
   }
@@ -43,7 +42,6 @@ class EditProfile extends React.Component {
               <Segment>
                 <TextField name='name'/>
                 <TextField name='email'/>
-                <NumField name='id' decimal={false}/>
                 <TextField name='image'/>
                 <LongTextField name='description'/>
                 <SubmitField value='Submit'/>

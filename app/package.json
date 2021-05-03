@@ -33,7 +33,7 @@
     "eslint-utils": "^2.0.0"
   },
   "scripts": {
-    "start": "meteor --no-release-check --settings ../config/settings.development.json",
+    "start": "meteor --no-release-check --settings settings.development.json",
     "lint": "eslint --quiet --ext .jsx --ext .js ./imports"
   }
 }

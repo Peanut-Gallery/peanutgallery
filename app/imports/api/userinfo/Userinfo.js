@@ -9,7 +9,6 @@ const UserInfo = new Mongo.Collection('UserInfo');
 const UserInfoSchema = new SimpleSchema({
     name: String,
     email: String,
-    id: Number,
     image: String,
     description: String,
     owner: String,

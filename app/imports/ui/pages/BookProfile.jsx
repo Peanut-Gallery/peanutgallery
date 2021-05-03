@@ -38,16 +38,13 @@ class BookProfile extends React.Component {
                   </Card.Description>
                   <br/>
                   <Card.Meta>
-                    Cost: {this.props.book.cost}
+                    Cost: {this.props.book.owner}
                   </Card.Meta>
                   <br/>
                   <Card.Meta>
                     Condition: {this.props.book.condition}
                   </Card.Meta>
                   <br/>
-                  <Card.Meta>
-                    Year Published: {this.props.book.yearPublished}
-                  </Card.Meta>
                   <br/>
                 </Card.Content>
                 <Card.Content extra>

@@ -12,7 +12,7 @@ const formSchema = new SimpleSchema({
   userImage: { type: String, label: 'Reviewer Image:' },
   toUser: { type: String, label: 'Review For:' },
   comment: String,
-  rating: { type: Number, label: 'Rating:', min: 0, max: 5 },
+  rating: { type: Number, label: 'Rating out of 5:', min: 0, max: 5 },
 });
 
 /** Renders the Page for adding comment about a user's buying experience with another user. */
@@ -41,7 +41,7 @@ class AddComment extends React.Component {
     return (
         <Grid style={addStyle} container centered>
           <Grid.Column>
-            <Header as="h2" inverted textAlign="center">Rate Your Buying Experience With A User!</Header>
+            <Header as="h2" inverted textAlign="center">Rate Your Experience By Completing a Survey!</Header>
             <AutoForm ref={ref => {
               fRef = ref;
             }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>

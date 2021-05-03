@@ -28,7 +28,6 @@ class Profile extends React.Component {
                 />
                 <Card.Header>{this.props.userInfo.name} </Card.Header>
                 <Card.Meta>Email: {this.props.userInfo.email}</Card.Meta>
-                <Card.Meta>UH ID Number: {this.props.userInfo.id}</Card.Meta>
                 <Card.Meta>
                   {this.props.userInfo.description}
                 </Card.Meta>

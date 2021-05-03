@@ -11,7 +11,6 @@ const formSchema = new SimpleSchema({
   name: String,
   email: String,
   password: String,
-  id: Number,
   image: String,
   description: String,
 });
@@ -31,12 +30,12 @@ class Signup extends React.Component {
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = (data, formRef) => {
-    const { name, email, password, id, image, description } = data;
+    const { name, email, password, image, description } = data;
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        UserInfo.insert({ name, email, id, image, description, owner: email });
+        UserInfo.insert({ name, email, image, description, owner: email });
         this.setState({ error: '', redirectToReferer: true });
         formRef.reset();
       }
@@ -46,7 +45,7 @@ class Signup extends React.Component {
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
     let fRef = null;
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
+    const { from } = this.props.location.state || { from: { pathname: '/signin' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;
@@ -72,13 +71,6 @@ class Signup extends React.Component {
                     iconPosition="left"
                     name="email"
                     placeholder="E-mail Address"
-                />
-                <TextField
-                    label="School ID"
-                    icon="id card"
-                    iconPosition="left"
-                    name="id"
-                    placeholder="ID Number"
                 />
                 <TextField
                     label="Password"

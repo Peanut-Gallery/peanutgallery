@@ -17,7 +17,7 @@ class AboutFAQ extends React.Component {
             <h2>Q: Where do I begin?</h2>
             <p>A: Registered users can sign-in in here. If you are not a registered user, you can register here.
             </p>
-            <p><b>Racial, sexual, or ay inappropriate slurs will not be tolerated, and users will be banned for
+            <p><b>Racial, sexual, or any inappropriate slurs will not be tolerated, and users will be banned for
               illegal/inappropriate behavior.</b></p>
           </Grid.Column>
         </Grid>

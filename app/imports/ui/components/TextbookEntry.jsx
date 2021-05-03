@@ -28,7 +28,11 @@ class TextbookEntry extends React.Component {
             </Card.Meta>
             <br/>
             <Card.Meta>
-              Company: {this.props.book.cost}
+              Company: {this.props.book.owner}
+            </Card.Meta>
+            <br/>
+            <Card.Meta>
+              Description: {this.props.book.description}
             </Card.Meta>
             <br/>
           </Card.Content>

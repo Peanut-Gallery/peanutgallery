@@ -1,0 +1,72 @@
+{
+  "defaultAccounts": [
+    {
+      "email": "john@foo.com",
+      "password": "changeme"
+    },
+    {
+      "email": "mary@foo.com",
+      "password": "changeme"
+    },
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "email": "snguyen2@hawaii.edu",
+      "password": "changeme",
+      "role": "admin"
+    }
+  ],
+  "defaultBooks": [
+    {
+      "title": "Facebook",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FFacebook_logo_36x36.svg%2F1200px-Facebook_logo_36x36.svg.png&f=1&nofb=1",
+      "author": "John Doe",
+      "owner": "Mark Zuckerberg",
+      "description": "Facebook is an American online social media and social networking service based in Menlo Park, California, and a flagship service of the namesake company Facebook, Inc.."
+    },
+    {
+      "title": "Google",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F02%2FG-letter-google-logo.jpg&f=1&nofb=1",
+      "author": "Jane Doe",
+      "owner": "Alphabet Inc.",
+      "description": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware."
+    }
+  ],
+  "defaultProfile": [
+    {
+      "name": "Sang Nguyen",
+      "email": "snguyen2@hawaii.edu",
+      "image": "https://react.semantic-ui.com/images/wireframe/image.png",
+      "description": "Welcome to the Peanut Gallery community! Don't forget to read the About/FAQ!",
+      "owner": "snguyen2@hawaii.edu"
+    },
+    {
+      "name": "John",
+      "email": "john@foo.com",
+      "image": "https://react.semantic-ui.com/images/wireframe/image.png",
+      "description": "Electrical Engineering major student.",
+      "owner": "john@foo.com"
+    },
+    {
+      "name": "Mary",
+      "email": "mary@foo.com",
+      "image": "https://react.semantic-ui.com/images/wireframe/image.png",
+      "description": "I am a student attending UH Manoa. CS major. C/O 2022. Go bows!",
+      "owner": "mary@foo.com"
+    }
+  ],
+  "defaultRatings": [
+    {
+      "userEmail": "john@foo.com",
+      "userImage": "https://react.semantic-ui.com/images/wireframe/image.png",
+      "toUser": "Facebook",
+      "comment": "I had a decent time on this site.",
+      "rating": 4,
+      "postedAt": "Sat May 10 2020 20:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "owner": "john@foo.com"
+    }
+  ]
+}
