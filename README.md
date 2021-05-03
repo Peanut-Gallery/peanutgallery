@@ -101,3 +101,57 @@
 **Shawn Anthony**
   - To do next:
     - Continue working on our database
+
+# 5/2/21 Update
+
+## Team Members
+
+**Sang Nguyen**
+  - Finish coding application
+  - Create Wiki Page 
+  - Update README
+
+**Jon Hsu**
+  - Update report with an incidident response plan in case of future threats
+
+**Shawn Anthony**
+  - Go over FSR check on application
+
+## Technical Guide
+
+First, install Meteor.
+
+Second, visit the Peanut Gallery application GitHub page and click the “Use this template” button to create your own repository 
+initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the 
+repo. Then, download a copy of the repo to your local computer.
+
+Third, cd into the text-realm/app directory and install libraries with:
+
+```$ meteor npm install```
+
+Fourth, run the system with:
+
+```$ meteor npm run start```
+
+If it all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).
+
+### Initialization
+
+The config directory is intended to hold settings files. The repository contains one file: config/settings.development.json.
+
+This file contains default definitions for Users, Survey Entries, and Ratings/Reviews and the relationships between them.
+
+The initial system run may not initialize the database that comes with the template. To initialize this, run the system using:
+
+```meteor run --settings settings.development.json```
+
+## Closing Thoughts
+
+This program was very challenging to create, since there were a lot of new concepts that we had to learn and implement. Luckily, we found that there are many resources available to assist with creating a secure and safe application, starting from the IDE to storing data in a database. Some few disappointments that we had related to the workload, as we had to decrease the scale of our project to accomodate the time that we had to work and because of missing a team member. However, we are proud of what we accomplished and hope to use what we learned from this experience to continue striving to create more in the future.
+
+## Links
+
+- [Online Repository](https://github.com/Peanut-Gallery/peanutgallery)
+- [Documentation](https://github.com/Peanut-Gallery/peanutgallery/edit/main/README.md)
+- [Release Version](https://github.com/Peanut-Gallery/peanutgallery/releases/tag/v1.0)
+- [Wiki Page](https://github.com/Peanut-Gallery/peanutgallery/wiki/Wiki-Page-for-Peanut-Gallery)
